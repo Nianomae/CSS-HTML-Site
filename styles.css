@@ -1,0 +1,318 @@
+body {
+  background-image:  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url(bigstock-Santas-training-73365286.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+.Otext {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  font-family: 'AvenirNextCyr-Demi';
+  position: relative;
+  text-shadow: 0 4px 30px black;
+}
+
+.Dtext {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  font-family: 'AvenirNextCyr-Light';
+  position: relative;
+}
+
+.svg {
+  width: 230.4677276611328px;
+  height: 48px;
+  top: 11px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.Rasp {
+  padding: 11px 25px;
+  font-size: 12px;
+  font-family: 'AvenirNextCyr-Demi';
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  top: 17px;
+  right: 19px;
+  width: 166px;
+  height: 37px;
+  gap: 13px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: static;
+}
+
+.Rasp img {
+  width: 14px;
+  height: 16px;
+}
+
+.freekey {
+  font-size: 15px;
+  font-family: 'AvenirNextCyr-Demi';
+  display: inline-flex;
+  color: black;
+  background-color: white;
+  border: none;
+  width: 270px;
+  height: 57px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center; /* оставлен один */
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abokey {
+  font-size: 15px;
+  font-family: 'AvenirNextCyr-Demi';
+  display: inline-flex;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  width: 270px;
+  height: 57px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center; /* оставлен один */
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twobutton {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Vector {
+  width: 14px;
+  height: 14px;
+  display: block;
+  color: white;
+  position: static;
+}
+
+.VK {
+  width: 20px;
+  height: 10px;
+  display: block;
+  color: white;
+  margin-right: 9px;
+  position: static;
+}
+
+.telefon {
+  width: 14px;
+  height: 18px;
+  display: block;
+  color: white;
+  margin-right: 9px;
+  position: static;
+}
+
+.numbertext {
+  width: 88px;
+  height: 27px;
+  font-size: 22px;
+  font-family: 'AvenirNextCyr-Demi';
+  text-align: center;
+  color: white;
+  display: block;
+  margin-right: 24px;
+  position: static;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.head-left {
+  display: flex;
+  align-items: center;
+}
+
+.menubutton {
+  display: none;
+}
+
+.mobile {
+display: none;
+}
+
+@font-face {
+  font-family: 'AvenirNextCyr-Bold';
+  src: url('./fonts/avenirnextcyr-bold.eot');
+  src: url('./fonts/avenirnextcyr-bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/avenirnextcyr-bold.woff2') format('woff2'),
+    url('./fonts/avenirnextcyr-bold.woff') format('woff'),
+    url('./fonts/avenirnextcyr-bold.ttf') format('truetype'),
+    url('./fonts/avenirnextcyr-bold.svg#avenirnextcyr-bold') format('svg');
+}
+
+@font-face {
+  font-family: 'AvenirNextCyr-Demi';
+  src: url('./fonts/avenirnextcyr-demi.eot');
+  src: url('./fonts/avenirnextcyr-demi.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/avenirnextcyr-demi.woff2') format('woff2'),
+    url('./fonts/avenirnextcyr-demi.woff') format('woff'),
+    url('./fonts/avenirnextcyr-demi.ttf') format('truetype'),
+    url('./fonts/avenirnextcyr-demi.svg#avenirnextcyr-demi') format('svg');
+}
+
+@font-face {
+  font-family: 'AvenirNextCyr-Light';
+  src: url('./fonts/avenirnextcyr-light.eot');
+  src: url('./fonts/avenirnextcyr-light.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/avenirnextcyr-light.woff2') format('woff2'),
+    url('./fonts/avenirnextcyr-light.woff') format('woff'),
+    url('./fonts/avenirnextcyr-light.ttf') format('truetype'),
+    url('./fonts/avenirnextcyr-light.svg#avenirnextcyr-light') format('svg');
+}
+
+@media (max-width: 1024px) {
+  .Rasp {
+  display: none;
+  }
+
+  .head {
+  padding: 15px 25px;
+  justify-content: space-between;
+  }
+
+  .head-left {
+  flex: 1;
+  }
+  
+  .svg {
+  position: static;
+  transform: none;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  }
+
+  .svg img {
+  height: 47px;
+  }
+
+  .menubutton {
+  display: block;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  border: none;
+  background: transparent;
+  }
+
+  .Dtext {
+  display: none;
+  }
+
+  .VK {
+  display: none;
+  }
+
+  .Vector {
+  display: none;
+  }
+
+  .twobutton {
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  }
+
+  .Otext {
+  margin-bottom: 237px;
+  max-width: 591px;
+  }
+}
+
+@media (max-width: 375px) {
+  .head {
+  padding: 10px 15px;
+  height: 40px;
+  }
+  
+  .numbertext {
+  display: none;
+  }
+
+  .svg img {
+  width: 105px ;
+  height: 21.41px;
+  }
+  
+  .Otext {
+  font-size: 18px;
+  width: 268;
+  height: 245;
+  max-width: 250;
+  line-height: 1.18;
+  }
+
+  .twobutton {
+  gap: 16.52px;
+  }
+
+  .abokey, .freekey {
+  width: 187px;
+  height: 39px;
+  font-size: 10px;
+  }
+
+  .telefon {
+  width: 18px;
+  height: 19px;
+  }
+  
+  .svg {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  }
+
+  .desktop {
+  display: none;
+  }
+  
+  .mobile {
+  display: block;
+  }
+}
