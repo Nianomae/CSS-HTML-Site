@@ -1,0 +1,8 @@
+<svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="calendar">
+<rect id="Rectangle 2" x="0.5" y="7.5" width="13" height="8" stroke="white"/>
+<path id="Line (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M10 4V0L11 0V4H10Z" fill="white"/>
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M2 2H0V8H14V2H12V5H9V2H5V5H2V2Z" fill="white"/>
+<path id="Line (Stroke)_2" fill-rule="evenodd" clip-rule="evenodd" d="M3 4V0L4 0V4H3Z" fill="white"/>
+</g>
+</svg>
