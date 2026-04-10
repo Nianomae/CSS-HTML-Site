@@ -5,31 +5,84 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Сайт RECORDGYM</title>
         <link rel="stylesheet" href="styles/styles.css">
+        <script src="scripts/script.js" defer></script>
     </head>
     <body>
         <header class="head">
             <div class="head-left">
                 <a href="tel:680214" class="phone">
-                <img src="images/Icons/Telefon.svg" alt="telefon" class="telefon">
-                <span class="numbertext">680-214</span>
+                    <img src="images/Icons/Telefon.svg" alt="" class="telefon">
+                    <span class="numbertext">680-214</span>
                 </a>
-                <a href="https://vk.com"><img src="images/Icons/VK.svg" alt="VK" class="VK"></a>
-                <a href="https://instagram.com"><img src="images/Icons/Vector.svg" alt="Vector" class="Vector"></a>
+                <a href="https://vk.com"><img src="images/Icons/VK.svg" alt="ВКонтакте" class="VK"></a>
+                <a href="https://instagram.com"><img src="images/Icons/Vector.svg" alt="Инстаграм" class="Vector"></a>
             </div>
-            <img src="images/logo/Group.svg" alt="svg" class="svg">
-            <button class="Rasp"><img src="images/icons/calendar.svg" alt="calendar">РАСПИСАНИЕ</button>
-            <button class="menubutton"><img src="images/icons/Group 2.svg" alt="menu"></button>
+            
+            <img src="images/logo/Group.svg" alt="Логотип Record Gym" class="svg">
+            
+            <button class="Rasp"><img src="images/icons/calendar.svg" alt="">РАСПИСАНИЕ</button>
+            
+            <button id="burgerButton" class="menubutton"><img src="images/icons/Group2.svg" alt="Открыть меню"></button>
         </header>
+
         <main class="main">
-            <div class="Otext">
+            <p class="Otext">
                 <span class="desktop">Не трать время на раздумья — <br>начни заниматься прямо сейчас!</span>
                 <span class="mobile">Не трать время на раздумья<br>—<br>начни заниматься прямо <br> сейчас!</span>
-            </div>
+            </p>
             <p class="Dtext">Запишись на первую бесплатную тренировку!</p>
+            
             <div class="twobutton">
-                <button class="freekey">БЕСПЛАТНАЯ ТРЕНИРОВКА</button>
-                <button class="abokey">ПОДОБРАТЬ АБОНЕМЕНТ</button>
+                <button class="freekey">Бесплатная тренировка</button>
+                <button class="abokey">Подобрать абонемент</button>
             </div>
         </main>
+
+        <nav id="mobileMenu" class="mobile-menu">
+            <div class="mobile-menu-container">
+                <div class="mobile-menu-header">
+                    <div class="header-left">
+                        <button id="closeMenuButton" class="mobile-menu-close">
+                            <img src="images/Icons/krest.svg" alt="Закрыть меню">
+                        </button>
+                        <a href="tel:680214" class="menu-phone">
+                            <img src="images/Icons/Telefon.svg" alt="" class="menu-phone-icon">
+                            <span>680-214</span>
+                        </a>
+                    </div>
+                    
+                    <div class="header-center-socials">
+                        <a href="https://vk.com" class="box-social"><img src="images/Icons/VK.svg" alt="VK"></a>
+                        <a href="https://instagram.com" class="box-social"><img src="images/Icons/Vector.svg" alt="IG"></a>
+                    </div>
+
+                    <div class="header-right-logo">
+                        <span class="fitness-text">ФИТНЕС КЛУБ</span>
+                        <img src="images/logo/Group.svg" alt="RECORD GYM" class="menu-logo-img">
+                    </div>
+                </div>
+
+                <ul class="mobile-menu-list">
+                    <li><a href="#">Бесплатная тренировка</a></li>
+                    <li><a href="#">Подобрать абонемент</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Наши услуги</a></li>
+                    <li><a href="#">Наши преимущества</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+                <div class="mobile-menu-bottom">
+                    <div class="menu-hours">
+                        <span class="hours-item">ПН – ПТ 07:00 – 22:00</span>
+                        <span class="hours-item">СБ – ВС 09:00 – 20:00</span>
+                    </div>
+                    
+                    <div class="menu-socials-bottom">
+                        <a href="https://vk.com" class="box-social"><img src="images/Icons/VK.svg" alt="VK"></a>
+                        <a href="https://instagram.com" class="box-social"><img src="images/Icons/Vector.svg" alt="IG"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </body>
 </html>
